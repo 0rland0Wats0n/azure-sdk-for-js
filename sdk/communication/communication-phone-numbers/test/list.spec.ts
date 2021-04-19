@@ -34,7 +34,7 @@ matrix([[false]], async function(useAad) {
         await recorder.stop();
       }
     });
-    
+
     it("will run infinitely", async function() {
       for await (const purchased of client.listPurchasedPhoneNumbers({ skip: 1, top: 5 })) {
         console.log(purchased.phoneNumber);
