@@ -22,7 +22,11 @@ export type GetPurchasedPhoneNumberOptions = OperationOptions;
 /**
  * Additional options that can be passed to the list phone numbers request.
  */
-export interface ListPurchasedPhoneNumbersOptions extends OperationOptions {}
+export interface ListPurchasedPhoneNumbersOptions extends OperationOptions {
+  skip?: number;
+
+  top?: number;
+}
 
 /**
  * Represents a phone number search request to find phone numbers.

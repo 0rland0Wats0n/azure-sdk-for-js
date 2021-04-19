@@ -33,6 +33,10 @@ export type GetPurchasedPhoneNumberOptions = OperationOptions;
 
 // @public
 export interface ListPurchasedPhoneNumbersOptions extends OperationOptions {
+    // (undocumented)
+    skip?: number;
+    // (undocumented)
+    top?: number;
 }
 
 // @public
